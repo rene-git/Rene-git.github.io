@@ -1,0 +1,75 @@
+@import "bootstrap.min.css";
+@import "color.scss";
+@import "view.scss";
+
+
+body {
+	background-color : $bg;
+}
+
+a {
+	color : #bfbfbf;
+}
+	a:hover {
+		text-decoration: none;
+		color : white;
+
+	}
+
+p {
+	color : #bfbfbf;
+	margin-bottom : 5px;
+	font-size : 0.8em;
+}
+h4 {
+	color : white;
+}
+
+.hor-line {
+	margin-top : 5px;
+	margin-bottom : 25px;
+	border : solid 1px white;
+}
+
+
+
+
+
+
+
+
+.content {
+	min-height : 250px;
+	margin-top : 80px;
+	background-color : white;
+}
+
+.content2 {
+	@extend .content;
+	background-color : #bbbbbb;
+}
+
+.content3 {
+	@extend .content;
+	background-color : #8c8c8c;
+}
+
+.content3 {
+	@extend .content;
+	background-color : #dcdcdc;
+}
+
+.content4 {
+	@extend .content;
+	background-color : #9a9a9a;
+}
+
+.content5 {
+	@extend .content;
+	background-color : #656565;
+}
+
+.content6 {
+	@extend .content;
+	background-color : #444448;
+}
