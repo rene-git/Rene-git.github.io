@@ -1,4 +1,4 @@
-/*==== Break-point ======*/
+/*==== Break-point Ipad and smaller ======*/
 
 @media(max-width: 1024px) {
 	.side-nav {
@@ -21,14 +21,7 @@
 	    padding-right: 10px !important;
 	}
 }
-.nav-icon {
-	display: none;
-}
-.nav-text {
-	display: inline;
-}
-
-
+/*==== END ======*/
 
 
 
@@ -56,6 +49,14 @@ body {
 
 .top-nav ul li{
 	display:inline;
+}
+
+.nav-icon {
+	display: none;
+}
+
+.nav-text {
+	display: inline;
 }
 
 .page-header-bar {
