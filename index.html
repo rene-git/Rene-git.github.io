@@ -1,69 +1,241 @@
-
-<!doctype html>
-
-<html>
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<link rel="stylesheet" type="text/css" href="css/main.css">
-
-<script src="script/mainScript.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<title>Booking admin</title><!-- Bootstrap core CSS -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet"><!-- Custom styles for this template -->
+	<link href="./css/bookingadmin.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-
 <body>
-
-
-	
-	<div class="container">
-		<div class="col-lg-12"><h3>JSON, JS, HTML, CSS, SASS-SCSS, </h3></div>
-		<div class="col-lg-12">
-			<div class="hor-line"></div>
-		</div>
-
-		<div class="postOne col-lg-3 col-md-3 col-sm-6 col-xs-12">
-			<b><h4>Post Preprocessing</h4></b>
-		</div>
-
-		<div class="postTwo col-lg-3 col-md-3 col-sm-6 col-xs-12">
-			<b><h4>Creation</h4></b>
-		</div>
-
-		<div class="postThree col-lg-3 col-sm-6 col-xs-12">
-			<b><h4>Handywork</h4></b>
-		</div>
-
-		<div class="postFour col-lg-3 col-sm-6 col-xs-12">
-			<b><h4>Graphic</h4></b>
-		</div>		
-
-
-
-		<div id="box-lines">
-			<div class="content col-xs-1"></div>
-			<div class="content2 col-xs-1"></div>
-			<div class="content3 col-xs-1"></div>
-			<div class="content4 col-xs-1"></div>
-			<div class="content5 col-xs-1"></div>
-			<div class="content6 col-xs-1"></div>
-			<div class="content4 col-xs-1"></div>
-			<div class="content5 col-xs-1"></div>
-			<div class="content2 col-xs-1"></div>
-			<div class="content3 col-xs-1"></div>
-			<div class="content6 col-xs-1"></div>
-			<div class="content col-xs-1"></div>
-		</div>
-
-
-
+	<div class="page-header-bar">
+		<h1>Dashboard</h1>
 	</div>
+	<div class="side-nav">
+		<div class="booking-brand"><a href="http://bookingadmin.sitedev.no/"><img src="./img/branding-01.png"></a></div>
+		<ul>
+			<li>
+				<a href="#"><span aria-hidden="true" class="glyphicon glyphicon-dashboard nav-icon"></span>
+					<span class="nav-text">Dashboard</span></a>
+			</li>
+			<li>
+				<a href="#"><span aria-hidden="true" class="glyphicon glyphicon-calendar nav-icon"></span>
+					<span class="nav-text">Kalender</span></a>
+			</li>
+			<li>
+				<a href="#"><span aria-hidden="true" class="glyphicon glyphicon-user nav-icon"></span>
+					<span class="nav-text">Kunde</span></a>
+			</li>
+			<li>
+				<a href="#"><span aria-hidden="true" class="glyphicon glyphicon-tags nav-icon"></span>
+					<span class="nav-text">Objekt</span></a>
+			</li>
+			<li>
+				<a href="#"><span aria-hidden="true" class="glyphicon glyphicon-barcode nav-icon"></span>
+					<span class="nav-text">Varer</span></a>
+			</li>
+			<li>
+				<a href="#"><span aria-hidden="true" class="glyphicon glyphicon-home nav-icon"></span>
+					<span class="nav-text">Utleiested</span></a>
+			</li>
+			<li>
+				<a href="#"><span aria-hidden="true" class="glyphicon glyphicon-credit-card nav-icon"></span>
+					<span class="nav-text">Økinomi</span></a>
+			</li>
+			<li>
+				<a href="#"><span aria-hidden="true" class="glyphicon glyphicon-stats nav-icon"></span>
+					<span class="nav-text">Rapport</span></a>
+			</li>
+			<li>
+				<a href="#"><span aria-hidden="true" class="glyphicon glyphicon-hdd nav-icon"></span>
+					<span class="nav-text">System</span></a>
+			</li>
+		</ul>
+	</div>
+	<div class="site-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Bookinger til oppfølging
+						</div>
+						<div class="panel-body">
+							<div class="col-lg-6">
+								<div class="well booking-item status0">
+									<ul class="booking-item-info">
+										<li>Solist</li>
+										<li>09:00</li>
+										<li>1/5</li>
+									</ul>
+									<ul class="booking-item-icons">
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="well booking-item status1">
+									<ul class="booking-item-info">
+										<li>Haidari</li>
+										<li>Solist</li>
+										<li>09:00</li>
+										<li>1/5</li>
+									</ul>
+									<ul class="booking-item-icons">
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="well booking-item status2">
+									<ul class="booking-item-info">
+										<li>De Mora</li>
+										<li>Solist</li>
+										<li>09:00</li>
+										<li>1/5</li>
+									</ul>
+									<ul class="booking-item-icons">
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="well booking-item status3">
+									<ul class="booking-item-info">
+										<li>Solist</li>
+										<li>09:00</li>
+										<li>1/5</li>
+									</ul>
+									<ul class="booking-item-icons">
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="well booking-item status3">
+									<ul class="booking-item-info">
+										<li>Solist</li>
+										<li>09:00</li>
+										<li>1/5</li>
+									</ul>
+									<ul class="booking-item-icons">
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="well booking-item status0">
+									<ul class="booking-item-info">
+										<li>Solist</li>
+										<li>09:00</li>
+										<li>1/5</li>
+									</ul>
+									<ul class="booking-item-icons">
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="well booking-item status1">
+									<ul class="booking-item-info">
+										<li>Solist</li>
+										<li>09:00</li>
+										<li>1/5</li>
+									</ul>
+									<ul class="booking-item-icons">
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="well booking-item status2">
+									<ul class="booking-item-info">
+										<li>Solist</li>
+										<li>09:00</li>
+										<li>1/5</li>
+									</ul>
+									<ul class="booking-item-icons">
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+										<li><span aria-hidden="true" class="glyphicon glyphicon-search"></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="status-help">
+									<ul>
+										<li>HoldesAv</li>
+										<li>Reservert/Ikke godkj.</li>
+										<li>Godkjent</li>
+										<li>Ikke godkjent</li>
+										<li>Påbegynt/Innsjekket</li>
+									</ul>
+								</div>
+							</div>
+						</div><button class="btn btn-default show-more" type="button">Utvid</button>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="well well-lg dash-button">
+						<span aria-hidden="true" class="glyphicon glyphicon-calendar"></span>
+						<span class="dash-button-text">Kalender</span>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="well well-lg dash-button">
+						<span aria-hidden="true" class="glyphicon glyphicon-shopping-cart"></span>
+						<span class="dash-button-text">Kassa</span>
+					</div>
+				</div>
+				<div class="col-xs-6">
+				<div class="panel">
+				<div class="panel-heading">Meldinger til oppfølging</div>
+				<div class="panel-body">
+				<ul class="list-group">
+  				<li class="list-group-item"><span class="label label-default dash-msg-label">Haidari</span><span class="label label-info dash-msg-label">[09:00] Solist 101</span>Er det greit om vi har med en person til?</li>
+  				<li class="list-group-item"><span class="label label-default dash-msg-label">Jensen</span><span class="label label-info dash-msg-label">[12:00] Bamse-rommet</span>Hvor er inngangen?</li>
+  				<li class="list-group-item"><span class="label label-default dash-msg-label">Jan-Geir</span><span class="label label-info dash-msg-label">[11:00] Loftet</span>Jeg trenger hjelp å bære ting inn..</li>
+  				<li class="list-group-item"><span class="label label-default dash-msg-label">Dekk-kongen</span><span class="label label-info dash-msg-label">[15:00] Rev-rommet</span>Hvilken dag er det idag?</li>
+  				<li class="list-group-item"><span class="label label-default dash-msg-label">Knudsen</span><span class="label label-info dash-msg-label">[12:00] Maxirom</span>Er det mandag? Neeei...</li>
+</ul></div>
+<button class="btn btn-default show-more" type="button">Utvid</button>
+				</div>
 
-
-<body onload="test()">
-
-
+				</div>
+			</div>
+		</div><!-- container-fluid -->
+	</div><!-- page-wrapper -->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+	<script>
+	window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+	</script>
+	<script src="/js/bootstrap.min.js">
+	</script>
 </body>
-
 </html>
