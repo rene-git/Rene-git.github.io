@@ -16,6 +16,10 @@
 	.page-header-bar h1 {
 		margin-left: 80px !important;
 	}
+	.booking-brand {
+	    padding-left: 10px !important;
+	    padding-right: 10px !important;
+	}
 }
 .nav-icon {
 	display: none;
